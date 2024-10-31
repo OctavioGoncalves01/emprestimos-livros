@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\Projeto01\\ProjetoExemplo\\ProjetoExemplo.csproj": {}
+    "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\ProjetoExemplo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\Projeto01\\ProjetoExemplo\\ProjetoExemplo.csproj": {
+    "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\ProjetoExemplo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\Projeto01\\ProjetoExemplo\\ProjetoExemplo.csproj",
+        "projectUniqueName": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\ProjetoExemplo.csproj",
         "projectName": "ProjetoExemplo",
-        "projectPath": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\Projeto01\\ProjetoExemplo\\ProjetoExemplo.csproj",
+        "projectPath": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\ProjetoExemplo.csproj",
         "packagesPath": "C:\\Users\\octav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\Projeto01\\ProjetoExemplo\\obj\\",
+        "outputPath": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\octav\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,16 +1,22 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjetoExemplo.Models
 {
     public class EmprestimosModel
     {
         public int Id { get; set; }
-        public string Receber { get; set; }
-        public string Fornecedor { get; set; }
-        public string LivroEmprestado { get; set; }
+
+        [Required(ErrorMessage = "Digite o nome de quem irá receber o livro")]
+        public required string Receber { get; set; }
+        
+        [Required(ErrorMessage = "Digite o nome de quem irá fornecer o livro")]
+        public required string  Fornecedor { get; set; }
+        
+        [Required(ErrorMessage = "Digite o nome da obra")]
+        public required string LivroEmprestado { get; set; }
+        
         public DateTime dataUltimaAtualiacao { get; set; } = DateTime.Now;
+
     }
 }
