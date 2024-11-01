@@ -1,10 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using ProjetoExemplo.Data;
 using ProjetoExemplo.Models;
 
@@ -68,6 +62,8 @@ namespace ProjetoExemplo.Controllers
                 _db.Emprestimos.Add(emprestimos);
                 _db.SaveChanges();
                 
+                TempData["MensagemSucesso"] = "Cadastro Realizado com sucesso";
+                
                 return RedirectToAction("Index");
             }
             return View();
@@ -81,8 +77,12 @@ namespace ProjetoExemplo.Controllers
                 _db.Emprestimos.Update(emprestimo);
                 _db.SaveChanges();
 
+
+                TempData["MensagemSucesso"] = "Edição Realizado com sucesso";
+
                 return RedirectToAction("Index");
             }
+            TempData["MensagemErro"] = "Houve uma falha na edição!!";
 
             return View(emprestimo);
         }
@@ -95,6 +95,8 @@ namespace ProjetoExemplo.Controllers
 
             _db.Emprestimos.Remove(emprestimo);
             _db.SaveChanges();
+            
+            TempData["MensagemSucesso"] = "Exclusão Realizado com sucesso";
 
             return RedirectToAction("Index");
         }

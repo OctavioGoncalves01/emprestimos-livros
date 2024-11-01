@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M/0Q54jSCA5VM0OmhmYyZvR3U+b8AEvJP9Cj7dv5GoY=",
+  "Hash": "yxtJaC5BxMyZe9z/ssJQ/BTCnqBERJhGE6Bg4ynqJZI=",
   "Source": "ProjetoExemplo",
   "BasePath": "_content/ProjetoExemplo",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProjetoExemplo.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\wwwroot\\css\\Flatly.css",
+      "SourceId": "ProjetoExemplo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\wwwroot\\",
+      "BasePath": "_content/ProjetoExemplo",
+      "RelativePath": "css/Flatly.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Flatly.css"
+    },
+    {
       "Identity": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\wwwroot\\css\\site.css",
       "SourceId": "ProjetoExemplo",
       "SourceType": "Discovered",
@@ -91,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\wwwroot\\img\\imagem.png",
+      "SourceId": "ProjetoExemplo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\wwwroot\\",
+      "BasePath": "_content/ProjetoExemplo",
+      "RelativePath": "img/imagem.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\imagem.png"
     },
     {
       "Identity": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\wwwroot\\js\\site.js",

@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\ProjetoExemplo.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\wwwroot\\css\\Flatly.css",
+      "PackagePath": "staticwebassets\\css\\Flatly.css"
+    },
+    {
       "Id": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\wwwroot\\img\\imagem.png",
+      "PackagePath": "staticwebassets\\img\\imagem.png"
     },
     {
       "Id": "C:\\Users\\octav\\OneDrive\\Área de Trabalho\\DIO\\Treino\\ApsNetCore\\EmprestimosLivros\\ProjetoExemplo\\wwwroot\\js\\site.js",
