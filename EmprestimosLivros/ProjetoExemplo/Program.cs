@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ProjetoExemplo.Data;
+using Refit;
 
 var builder = WebApplication.CreateBuilder(args);
 

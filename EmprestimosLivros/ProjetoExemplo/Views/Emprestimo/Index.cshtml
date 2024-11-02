@@ -4,7 +4,11 @@
 
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h1>Histórico de Empréstimos</h1>
-        <a class="btn btn-success mx-2" asp-controller="Emprestimo" asp-action="Cadastrar">Cadastrar novo empréstimo</a>
+        <div>
+            <a class="btn btn-success mx-2" asp-controller="Emprestimo" asp-action="Cadastrar">Cadastrar novo empréstimo</a>
+            <a class="btn btn-success mx-2" asp-controller="Emprestimo" asp-action="ExportarDados">Exportar Dados em Excel</a>
+        </div>
+        
     </div>
 
 

@@ -284,3 +284,13 @@ C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivro
 C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\obj\Debug\net8.0\ProjetoExemplo.pdb
 C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\obj\Debug\net8.0\ProjetoExemplo.genruntimeconfig.cache
 C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\obj\Debug\net8.0\ref\ProjetoExemplo.dll
+C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\Refit.dll
+C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\ExcelNumberFormat.dll
+C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\RBush.dll
+C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\System.IO.Packaging.dll

@@ -1,6 +1,9 @@
+using System.Data;
+using ClosedXML.Excel;
 using Microsoft.AspNetCore.Mvc;
 using ProjetoExemplo.Data;
 using ProjetoExemplo.Models;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace ProjetoExemplo.Controllers
 {
@@ -21,6 +24,8 @@ namespace ProjetoExemplo.Controllers
         public IActionResult Cadastrar(){
             return View();
         }
+
+
 
         [HttpGet]
         public IActionResult Editar(int? id){
@@ -53,6 +58,47 @@ namespace ProjetoExemplo.Controllers
             return View(emprestimo);
 
         }
+
+
+        public IActionResult ExportarDados(){
+            var dadosEmprestimosLista = GetDados();
+
+            using(XLWorkbook workbook = new XLWorkbook()){
+                workbook.AddWorksheet(dadosEmprestimosLista, "Dados Empréstimos Livros");
+
+                using(MemoryStream memory = new MemoryStream()){
+                    workbook.SaveAs(memory);
+                    return File(memory.ToArray(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "Empréstimos.xls");
+                }
+            }
+        }
+
+        private DataTable GetDados(){
+            DataTable dadosTabela = new DataTable();
+
+            dadosTabela.TableName = "Dados Empréstimos Livros";
+            dadosTabela.Columns.Add("Recebedor", typeof(string));
+            dadosTabela.Columns.Add("Fornecedor", typeof(string));
+            dadosTabela.Columns.Add("Livro", typeof(string));
+            dadosTabela.Columns.Add("Data empréstimo", typeof(DateTime));
+
+            var dados = _db.Emprestimos.ToList();
+
+            if (dados.Count > 0){
+                dados.ForEach(emprestimo =>{
+                    dadosTabela.Rows.Add(
+                        emprestimo.Receber, 
+                        emprestimo.Fornecedor, 
+                        emprestimo.LivroEmprestado, 
+                        emprestimo.dataUltimaAtualiacao
+                    );
+
+                });
+            }
+            
+            return dadosTabela;
+        }
+
 
 
         [HttpPost]
