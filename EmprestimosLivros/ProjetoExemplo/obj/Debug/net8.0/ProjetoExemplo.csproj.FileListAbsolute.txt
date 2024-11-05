@@ -294,3 +294,5 @@ C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivro
 C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\RBush.dll
 C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\SixLabors.Fonts.dll
 C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\System.IO.Packaging.dll
+C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\package-lock.json
+C:\Users\octav\OneDrive\Área de Trabalho\DIO\Treino\ApsNetCore\EmprestimosLivros\ProjetoExemplo\bin\Debug\net8.0\package.json

@@ -27,22 +27,20 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Emprestimo" asp-action="Index"><i class="bi bi-book"></i>Emprestimos</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Livros" asp-action="Index"><i class="bi bi-book"></i>Livros</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container container-expand-sm">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted bg-primary " >
-        <div class="container text-light">
-            &copy; 2024 - Projeto Emprestimos Livros - <a asp-area="" asp-controller="Home" asp-action="Privacy">Octavio Goncalves</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/v/dt/dt-2.1.8/datatables.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

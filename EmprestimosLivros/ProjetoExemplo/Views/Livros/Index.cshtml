@@ -1,0 +1,56 @@
+@using Newtonsoft.Json
+@model ProjetoExemplo.Models.LivrosViewModel
+
+<div>
+    <div>
+        <form method="post" asp-controller="Livros" asp-action="Index">
+            <div class="mb-4">
+                <label for="Pesquisa" class="form-label text-dark">Tema do livro:</label>
+                <input type="text" class="form-control" asp-for="Query" placeholder="Tema do livro:" />
+            </div>
+            <div class="d-flex gap-6 mt-3">
+                <button type="submit" class="btn btn-success w-50">Pesquisar</button>
+                <a class="btn btn-primary w-50" asp-controller="Home" asp-action="Index">Voltar a Empréstimos</a>
+            </div>
+        </form>
+
+        <h2>Resultados da Busca</h2>
+        @if (Model.Livros == null || !Model.Livros.Any())
+        {
+            <p>Nenhum livro encontrado.</p>
+        }
+        else
+        {
+           
+
+<div class="Column center" >
+    @foreach (var livro in Model.Livros)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        @if (!string.IsNullOrEmpty(livro.ImageLinks?.Thumbnail))
+                        {
+                            <img src="@livro.ImageLinks.Thumbnail" alt="@livro.Title" class="card-img"/>
+                        }
+                    </div>
+                    <div class="col-md-8 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">@livro.Title</h5>
+                            <p class="card-text"><strong>Autores:</strong> @string.Join(", ", livro.Authors ?? new List<string>())</p>
+                            <p class="card-text"><strong>Publicado em:</strong> @livro.PublishedDate</p>
+                            <p class="card-text"><strong>Quantidade de páginas:</strong> @livro.PageCount</p>
+                            <p class="card-text"><strong>Editora:</strong> @livro.Publisher</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+        }
+    </div>
+</div>

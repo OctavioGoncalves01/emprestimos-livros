@@ -14,3 +14,4 @@ Este projeto é um site de empréstimos desenvolvido com **ASP.NET Core MVC**. B
 - Entity Framework Core
 - SQL Server
 - HTML, CSS, JavaScript
+- Google API Livros
