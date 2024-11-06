@@ -27,6 +27,8 @@ namespace ProjetoExemplo.Models
         public int PageCount { get; set; }
         public string Language { get; set; }
         public ImageLinks ImageLinks { get; set; }
+
+         
     }
 
     public class IndustryIdentifier

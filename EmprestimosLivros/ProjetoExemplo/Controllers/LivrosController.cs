@@ -30,7 +30,7 @@ namespace ProjetoExemplo.Controllers
 
         public async Task<List<VolumeInfo>> BuscarLivros(string query)
         {
-            string url = $"https://www.googleapis.com/books/v1/volumes?q={query}&langRestrict=pt&printType=books&maxResults=5";
+            string url = $"https://www.googleapis.com/books/v1/volumes?q={query}&langRestrict=pt&printType=books&maxResults=15";
 
             var response = await _httpClient.GetAsync(url);
 

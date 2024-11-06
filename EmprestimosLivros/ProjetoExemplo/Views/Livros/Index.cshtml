@@ -2,40 +2,39 @@
 @model ProjetoExemplo.Models.LivrosViewModel
 
 <div>
-    <div>
+    <div class="container">
         <form method="post" asp-controller="Livros" asp-action="Index">
             <div class="mb-4">
                 <label for="Pesquisa" class="form-label text-dark">Tema do livro:</label>
                 <input type="text" class="form-control" asp-for="Query" placeholder="Tema do livro:" />
             </div>
-            <div class="d-flex gap-6 mt-3">
-                <button type="submit" class="btn btn-success w-50">Pesquisar</button>
-                <a class="btn btn-primary w-50" asp-controller="Home" asp-action="Index">Voltar a Empréstimos</a>
+            <div class="d-flex justify-content-start mt-3">
+                <button type="submit" class="btn btn-success btn-sm me-2">Pesquisar</button> <!-- Adicionando me-2 aqui -->
+                <a class="btn btn-primary btn-sm" asp-controller="Home" asp-action="Index">Voltar a Empréstimos</a>
             </div>
         </form>
+        
+        <div class="mb-3">
+            <h2>Resultados da Busca</h2>
+        </div>
 
-        <h2>Resultados da Busca</h2>
         @if (Model.Livros == null || !Model.Livros.Any())
         {
             <p>Nenhum livro encontrado.</p>
         }
         else
         {
-           
+            <div class="container d-flex justify-content-center dark row mb-2">
+                @foreach (var livro in Model.Livros)
+                {
+                    <div class="card border-dark mb-4" style="max-width: 100rem;">
+                        <div class="d-flex justify-content-center" style="height: 200px; align-items: center;">
+                            @if (!string.IsNullOrEmpty(livro.ImageLinks?.Thumbnail))
+                            {
+                                <img src="@livro.ImageLinks.Thumbnail" alt="@livro.Title" class="card-img-top mx-2" style="max-height: 200px; width: auto;"/>
+                            }
+                        </div>
 
-<div class="Column center" >
-    @foreach (var livro in Model.Livros)
-    {
-        <div class="col-md-4 mb-4">
-            <div class="card">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        @if (!string.IsNullOrEmpty(livro.ImageLinks?.Thumbnail))
-                        {
-                            <img src="@livro.ImageLinks.Thumbnail" alt="@livro.Title" class="card-img"/>
-                        }
-                    </div>
-                    <div class="col-md-8 text-center">
                         <div class="card-body">
                             <h5 class="card-title">@livro.Title</h5>
                             <p class="card-text"><strong>Autores:</strong> @string.Join(", ", livro.Authors ?? new List<string>())</p>
@@ -43,14 +42,19 @@
                             <p class="card-text"><strong>Quantidade de páginas:</strong> @livro.PageCount</p>
                             <p class="card-text"><strong>Editora:</strong> @livro.Publisher</p>
                         </div>
+
+                        <div class="text-center mb-3">
+                            <a class="btn btn-primary w-75" 
+                               asp-controller="Emprestimo" 
+                               asp-action="Cadastrar" 
+                               asp-route-id="livro" 
+                               asp-route-livroNome="@livro.Title">
+                                Pegar livro emprestado
+                            </a>
+                        </div>
                     </div>
-                </div>
+                }
             </div>
-        </div>
-    }
-</div>
-
-
         }
     </div>
 </div>
