@@ -3,26 +3,39 @@ using ClosedXML.Excel;
 using Microsoft.AspNetCore.Mvc;
 using ProjetoExemplo.Data;
 using ProjetoExemplo.Models;
+using ProjetoExemplo.Services.SessaoService;
 
 namespace ProjetoExemplo.Controllers
 {
     public class EmprestimoController : Controller
     {
         private readonly AplicationDbContext _db;
+        private readonly ISessaoInterface _sessaoInterface;
 
-        public EmprestimoController(AplicationDbContext db)
+        public EmprestimoController(AplicationDbContext db, ISessaoInterface sessaoInterface)
         {
             _db = db;
+            _sessaoInterface = sessaoInterface;
         }
 
         public IActionResult Index()
         {
+            var usuario = _sessaoInterface.BuscarSessao();
+            if(usuario == null){
+                return RedirectToAction("Login", "Index");
+            }
+
             IEnumerable<EmprestimosModel> emprestimos = _db.Emprestimos;
             return View(emprestimos);
         }
 
         public IActionResult Cadastrar(string livroNome)
         {
+            var usuario = _sessaoInterface.BuscarSessao();
+            if(usuario == null){
+                return RedirectToAction("Login", "Index");
+            }
+
             var model = new EmprestimosModel
             {
                 LivroEmprestado = livroNome 
@@ -48,6 +61,12 @@ namespace ProjetoExemplo.Controllers
         [HttpGet]
         public IActionResult Editar(int? id)
         {
+
+            var usuario = _sessaoInterface.BuscarSessao();
+            if(usuario == null){
+                return RedirectToAction("Login", "Index");
+            }
+
             if (id == null || id == 0)
             {
                 return NotFound();
@@ -82,6 +101,12 @@ namespace ProjetoExemplo.Controllers
         [HttpGet]
         public IActionResult Excluir(int? id)
         {
+
+            var usuario = _sessaoInterface.BuscarSessao();
+            if(usuario == null){
+                return RedirectToAction("Login", "Index");
+            }
+
             if (id == null || id == 0)
             {
                 return NotFound();

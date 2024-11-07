@@ -1,0 +1,55 @@
+@using ProjetoExemplo.DTO
+@model UsuarioRegisterDTO
+
+@{
+    Layout = "_LayoutDeslogado";
+}
+
+@if(TempData["MensagemSucesso"] != null){
+    <div class="alert alert-success text-light" role="alert">
+        @TempData["MensagemSucesso"]
+    </div>
+}
+
+@if(TempData["MensagemErro"] != null){
+    <div class="alert alert-denger text-light" role="alert">
+        @TempData["MensagemErro"]
+    </div>
+}
+
+<div class="conteiner">
+    <h1>Cadastrar Novo Usuário:</h1>
+
+    <form asp-action="Registrar" asp-controller="Login" method="post">
+    <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" asp-for="Email">
+    </div>
+
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome:</label>
+        <input type="text" class="form-control" id="nome" asp-for="Nome">
+    </div>
+
+    <div class="mb-3">
+        <label for="sobrenome" class="form-label">Sobrenome:.</label>
+        <input type="text" class="form-control" id="sobrenome" asp-for="Sobrenome">
+    </div>
+
+    <div class="form-group">
+        <label for="senha" class="form-label">SENHA:</label>
+        <input type="password" class="form-control" id="senha" asp-for="Senha">
+    </div>
+
+    <div class="form-group">
+        <label for="senha" class="form-label">Confirma SENHA:</label>
+        <input type="password" class="form-control" id="senha" asp-for="ConfirmaSenha">
+    </div>
+
+    <div class="d-flex justfy-contente-center">
+    <button type="submit" class="btn btn-primary w-25 mx-2">Cadastrar Usuário</button>
+    <a asp-action="Index" asp-controller="Login" class="btn btn-dark text-light w-25">Volter</a>
+    </div>
+
+    </form>
+</div>
